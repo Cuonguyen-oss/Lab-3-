@@ -1,0 +1,5 @@
+../Core/Src/segment.c:27:6:set7SegH	5
+../Core/Src/segment.c:40:6:set7SegV	5
+../Core/Src/segment.c:57:6:scan7Seg	3
+../Core/Src/segment.c:81:6:updateSegment	1
+../Core/Src/segment.c:88:6:updateSegment2Digits	1

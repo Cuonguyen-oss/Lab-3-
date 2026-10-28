@@ -1,0 +1,10 @@
+../Core/Src/fsm.c:26:6:segmentUpdateAuto	8	static
+../Core/Src/fsm.c:30:6:fsm_run	8	static
+../Core/Src/fsm.c:36:6:button0Signal	8	static
+../Core/Src/fsm.c:57:13:autoHorCommon	8	static
+../Core/Src/fsm.c:70:6:fsm_auto_hor	8	static
+../Core/Src/fsm.c:114:6:fsm_auto_ver	8	static
+../Core/Src/fsm.c:165:13:saveRed	16	static
+../Core/Src/fsm.c:174:13:saveGrn	16	static
+../Core/Src/fsm.c:182:13:saveYel	16	static
+../Core/Src/fsm.c:190:6:fsm_man	8	static
