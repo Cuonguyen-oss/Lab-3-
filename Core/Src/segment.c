@@ -1,9 +1,3 @@
-/*
- * segment.c
- *
- *  Created on: Nov 11, 2024
- *      Author: l1ttled1no
- */
 
 
 #include "segment.h"
