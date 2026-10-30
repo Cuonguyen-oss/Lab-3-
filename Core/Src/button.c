@@ -1,15 +1,9 @@
-/*
- * button.c
- *
- *  Created on: Nov 9, 2024
- *      Author: l1ttled1no
- */
+
 
 #include "button.h"
 
 int buttonFlag[NO_BUTTON] = {0, 0, 0};
-//int pressed[NO_BUTTON] = {0, 0, 0};
-//int longPressed[NO_BUTTON] = {0, 0, 0};
+
 int timeout[NO_BUTTON] = {100, 100, 100};
 
 int KeyReg0[NO_BUTTON] = {RELEASED, RELEASED, RELEASED};
@@ -31,14 +25,14 @@ void buttonRead(){
 		KeyReg1[i] = KeyReg0[i];
 		KeyReg0[i] = HAL_GPIO_ReadPin(sw0_GPIO_Port, sw0_Pin << i);
 		if ((KeyReg1[i] == KeyReg0[i]) && (KeyReg1[i] == KeyReg2[i])){
-			if (KeyReg2[i] != KeyReg3[i]){ //reg2 != reg3
+			if (KeyReg2[i] != KeyReg3[i]){ 
 				KeyReg3[i] = KeyReg2[i];
 				if (KeyReg0[i] == PRESSED){
 					timeout[i] = 100;
 					buttonFlag[i] = 1;
 				}
 			}
-			else { //reg2 = reg3
+			else { 
 				timeout[i]--;
 				if (timeout[i] == 0){
 					timeout[i] = 10;
